@@ -15,10 +15,10 @@ const salesData = [
 ]
 
 const categoryData = [
-  { category: "Lácteos", sales: 4000, percentage: 35 },
-  { category: "Bebidas", sales: 3000, percentage: 26 },
-  { category: "Snacks", sales: 2000, percentage: 17 },
-  { category: "Frutas", sales: 1500, percentage: 13 },
+  { category: "Camisetas", sales: 4000, percentage: 35 },
+  { category: "Pantalones", sales: 3000, percentage: 26 },
+  { category: "Sudaderas", sales: 2000, percentage: 17 },
+  { category: "Calzado", sales: 1500, percentage: 13 },
   { category: "Otros", sales: 1000, percentage: 9 },
 ]
 

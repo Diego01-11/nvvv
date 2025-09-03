@@ -42,7 +42,7 @@ export function ProductForm({ product, onSave, onClose }: ProductFormProps) {
     sku: product?.sku || "",
   })
 
-  const categories = ["Lácteos", "Panadería", "Aceites", "Proteínas", "Bebidas", "Snacks", "Frutas"]
+  const categories = ["Camisetas", "Pantalones", "Sudaderas", "Calzado", "Chaquetas", "Vestidos", "Accesorios"]
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
@@ -70,16 +70,16 @@ export function ProductForm({ product, onSave, onClose }: ProductFormProps) {
         <Card>
           <CardHeader>
             <CardTitle className="text-lg">Información Básica</CardTitle>
-            <CardDescription>Datos principales del producto</CardDescription>
+            <CardDescription>Datos principales de la prenda</CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
             <div className="space-y-2">
-              <Label htmlFor="name">Nombre del Producto</Label>
+              <Label htmlFor="name">Nombre de la Prenda</Label>
               <Input
                 id="name"
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                placeholder="Ej: Leche entera 1L"
+                placeholder="Ej: Camiseta básica algodón"
                 required
               />
             </div>
@@ -151,19 +151,19 @@ export function ProductForm({ product, onSave, onClose }: ProductFormProps) {
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="sku">SKU</Label>
-              <div className="flex gap-2">
-                <Input
-                  id="sku"
-                  value={formData.sku}
-                  onChange={(e) => setFormData({ ...formData, sku: e.target.value })}
-                  placeholder="Código único del producto"
-                  required
-                />
-                <Button type="button" variant="outline" onClick={generateSKU}>
-                  Generar
-                </Button>
-              </div>
+                              <Label htmlFor="sku">SKU</Label>
+                <div className="flex gap-2">
+                  <Input
+                    id="sku"
+                    value={formData.sku}
+                    onChange={(e) => setFormData({ ...formData, sku: e.target.value })}
+                    placeholder="Código único de la prenda"
+                    required
+                  />
+                  <Button type="button" variant="outline" onClick={generateSKU}>
+                    Generar
+                  </Button>
+                </div>
             </div>
 
             <div className="flex items-center space-x-2">
@@ -181,8 +181,8 @@ export function ProductForm({ product, onSave, onClose }: ProductFormProps) {
       {/* Imagen del producto */}
       <Card>
         <CardHeader>
-          <CardTitle className="text-lg">Imagen del Producto</CardTitle>
-          <CardDescription>Sube una imagen representativa del producto</CardDescription>
+                      <CardTitle className="text-lg">Imagen de la Prenda</CardTitle>
+            <CardDescription>Sube una imagen representativa de la prenda</CardDescription>
         </CardHeader>
         <CardContent>
           <div className="space-y-4">
@@ -226,7 +226,7 @@ export function ProductForm({ product, onSave, onClose }: ProductFormProps) {
         <Button type="button" variant="outline" onClick={onClose}>
           Cancelar
         </Button>
-        <Button type="submit">{product ? "Actualizar Producto" : "Crear Producto"}</Button>
+        <Button type="submit">{product ? "Actualizar Prenda" : "Crear Prenda"}</Button>
       </div>
     </form>
   )

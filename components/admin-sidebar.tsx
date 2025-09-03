@@ -27,7 +27,7 @@ const navigation = [
     icon: LayoutDashboard,
   },
   {
-    name: "Productos",
+    name: "Prendas",
     href: "/productos",
     icon: Package,
   },

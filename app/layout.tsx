@@ -8,7 +8,7 @@ import { AuthProvider } from "@/contexts/auth-context"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "Panel de Administración - Tienda Online",
+  title: "Panel de Administración - Tienda de Ropa",
   description: "Dashboard administrativo para gestión de tienda en línea",
   generator: "v0.app",
 }

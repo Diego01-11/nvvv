@@ -100,7 +100,7 @@ export default function AdminDashboard() {
       {/* Header */}
       <div>
         <h1 className="text-3xl font-bold text-foreground">Dashboard</h1>
-        <p className="text-muted-foreground">Resumen general de tu tienda en línea</p>
+        <p className="text-muted-foreground">Resumen general de tu tienda de ropa</p>
       </div>
 
       {/* Metrics Cards */}
@@ -151,7 +151,7 @@ export default function AdminDashboard() {
       <Card>
         <CardHeader>
           <CardTitle>Pedidos Recientes</CardTitle>
-          <CardDescription>Últimos pedidos realizados en tu tienda</CardDescription>
+          <CardDescription>Últimos pedidos realizados en tu tienda de ropa</CardDescription>
         </CardHeader>
         <CardContent>
           <Table>

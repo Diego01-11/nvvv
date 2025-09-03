@@ -38,22 +38,22 @@ interface Product {
 const mockProducts: Product[] = [
   {
     id: "1",
-    name: "Leche Entera 1L",
-    description: "Leche fresca entera de alta calidad",
-    price: 2.5,
-    category: "Lácteos",
+    name: "Camiseta Básica Algodón",
+    description: "Camiseta de algodón 100% premium de alta calidad",
+    price: 25.0,
+    category: "Camisetas",
     stock: 150,
     status: "active",
     image: "/vintage-milk-bottle.png",
-    sku: "LAC-001",
+    sku: "CAM-001",
     createdAt: "2024-01-15",
   },
   {
     id: "2",
-    name: "Pan Integral",
-    description: "Pan integral artesanal con semillas",
-    price: 3.2,
-    category: "Panadería",
+    name: "Jeans Clásicos",
+    description: "Jeans clásicos de denim resistente con corte recto",
+    price: 89.9,
+    category: "Pantalones",
     stock: 45,
     status: "active",
     image: "/whole-grain-bread.png",
@@ -62,38 +62,38 @@ const mockProducts: Product[] = [
   },
   {
     id: "3",
-    name: "Yogurt Natural",
-    description: "Yogurt natural sin azúcar añadida",
-    price: 1.8,
-    category: "Lácteos",
+    name: "Sudadera con Capucha",
+    description: "Sudadera cómoda con capucha y bolsillo frontal",
+    price: 45.0,
+    category: "Sudaderas",
     stock: 8,
     status: "active",
     image: "/natural-yogurt.png",
-    sku: "LAC-003",
+    sku: "SUD-003",
     createdAt: "2024-01-13",
   },
   {
     id: "4",
-    name: "Aceite de Oliva",
-    description: "Aceite de oliva extra virgen premium",
-    price: 8.5,
-    category: "Aceites",
+    name: "Zapatillas Deportivas",
+    description: "Zapatillas deportivas ligeras para uso diario",
+    price: 75.0,
+    category: "Calzado",
     stock: 25,
     status: "inactive",
     image: "/olive-oil-bottle.png",
-    sku: "ACE-004",
+    sku: "ZAP-004",
     createdAt: "2024-01-12",
   },
   {
     id: "5",
-    name: "Huevos Docena",
-    description: "Huevos frescos de gallinas libres",
-    price: 4.2,
-    category: "Proteínas",
+    name: "Chaqueta Denim",
+    description: "Chaqueta de denim clásica con botones metálicos",
+    price: 120.0,
+    category: "Chaquetas",
     stock: 120,
     status: "active",
     image: "/dozen-eggs-carton.jpg",
-    sku: "PRO-005",
+    sku: "CHA-005",
     createdAt: "2024-01-11",
   },
 ]
@@ -108,7 +108,7 @@ export default function ProductsPage() {
   const [isEditDialogOpen, setIsEditDialogOpen] = useState(false)
   const [isDetailsDialogOpen, setIsDetailsDialogOpen] = useState(false)
 
-  const categories = ["Lácteos", "Panadería", "Aceites", "Proteínas", "Bebidas", "Snacks", "Frutas"]
+  const categories = ["Camisetas", "Pantalones", "Sudaderas", "Calzado", "Chaquetas", "Vestidos", "Accesorios"]
 
   const filteredProducts = products.filter((product) => {
     const matchesSearch =
@@ -166,22 +166,22 @@ export default function ProductsPage() {
             {/* Header */}
             <div className="flex items-center justify-between">
               <div>
-                <h1 className="text-3xl font-bold text-foreground">Gestión de Productos</h1>
-                <p className="text-muted-foreground">Administra el catálogo de productos de tu tienda</p>
+                <h1 className="text-3xl font-bold text-foreground">Gestión de Prendas</h1>
+                <p className="text-muted-foreground">Administra el catálogo de prendas de tu tienda</p>
               </div>
               <Dialog open={isCreateDialogOpen} onOpenChange={setIsCreateDialogOpen}>
                 <DialogTrigger asChild>
-                  <Button className="gap-2">
-                    <Plus className="h-4 w-4" />
-                    Nuevo Producto
-                  </Button>
+                                      <Button className="gap-2">
+                      <Plus className="h-4 w-4" />
+                      Nueva Prenda
+                    </Button>
                 </DialogTrigger>
                 <DialogContent className="max-w-2xl">
                   <DialogHeader>
-                    <DialogTitle>Crear Nuevo Producto</DialogTitle>
-                    <DialogDescription>
-                      Completa la información del producto para agregarlo al catálogo
-                    </DialogDescription>
+                                    <DialogTitle>Crear Nueva Prenda</DialogTitle>
+                <DialogDescription>
+                  Completa la información de la prenda para agregarla al catálogo
+                </DialogDescription>
                   </DialogHeader>
                   <ProductForm
                     onClose={() => setIsCreateDialogOpen(false)}
@@ -245,15 +245,15 @@ export default function ProductsPage() {
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <Package className="h-5 w-5" />
-                  Productos ({filteredProducts.length})
+                  Prendas ({filteredProducts.length})
                 </CardTitle>
-                <CardDescription>Lista completa de productos en tu catálogo</CardDescription>
+                <CardDescription>Lista completa de prendas en tu catálogo</CardDescription>
               </CardHeader>
               <CardContent>
                 <Table>
                   <TableHeader>
                     <TableRow>
-                      <TableHead>Producto</TableHead>
+                      <TableHead>Prenda</TableHead>
                       <TableHead>SKU</TableHead>
                       <TableHead>Categoría</TableHead>
                       <TableHead>Precio</TableHead>
@@ -330,8 +330,8 @@ export default function ProductsPage() {
       <Dialog open={isEditDialogOpen} onOpenChange={setIsEditDialogOpen}>
         <DialogContent className="max-w-2xl">
           <DialogHeader>
-            <DialogTitle>Editar Producto</DialogTitle>
-            <DialogDescription>Modifica la información del producto</DialogDescription>
+                            <DialogTitle>Editar Prenda</DialogTitle>
+                <DialogDescription>Modifica la información de la prenda</DialogDescription>
           </DialogHeader>
           {selectedProduct && (
             <ProductForm
@@ -354,7 +354,7 @@ export default function ProductsPage() {
       <Dialog open={isDetailsDialogOpen} onOpenChange={setIsDetailsDialogOpen}>
         <DialogContent className="max-w-2xl">
           <DialogHeader>
-            <DialogTitle>Detalles del Producto</DialogTitle>
+                            <DialogTitle>Detalles de la Prenda</DialogTitle>
           </DialogHeader>
           {selectedProduct && (
             <ProductDetails product={selectedProduct} onClose={() => setIsDetailsDialogOpen(false)} />

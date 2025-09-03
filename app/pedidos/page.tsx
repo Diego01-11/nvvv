@@ -66,11 +66,11 @@ const mockOrders: Order[] = [
       phone: "+34 600 123 456",
     },
     items: [
-      { id: "1", name: "Leche Entera 1L", quantity: 2, price: 2.5, image: "/vintage-milk-bottle.png" },
-      { id: "2", name: "Pan Integral", quantity: 1, price: 3.2, image: "/whole-grain-bread.png" },
+      { id: "1", name: "Camiseta Básica Algodón", quantity: 2, price: 25.0, image: "/vintage-milk-bottle.png" },
+      { id: "2", name: "Jeans Clásicos", quantity: 1, price: 89.9, image: "/whole-grain-bread.png" },
     ],
     status: "pending",
-    total: 8.2,
+    total: 139.9,
     shippingAddress: {
       street: "Calle Mayor 123",
       city: "Madrid",
@@ -89,11 +89,11 @@ const mockOrders: Order[] = [
       phone: "+34 600 789 012",
     },
     items: [
-      { id: "3", name: "Yogurt Natural", quantity: 3, price: 1.8, image: "/natural-yogurt.png" },
-      { id: "5", name: "Huevos Docena", quantity: 1, price: 4.2, image: "/dozen-eggs-carton.jpg" },
+      { id: "3", name: "Sudadera con Capucha", quantity: 3, price: 45.0, image: "/natural-yogurt.png" },
+      { id: "5", name: "Chaqueta Denim", quantity: 1, price: 120.0, image: "/dozen-eggs-carton.jpg" },
     ],
     status: "shipped",
-    total: 9.6,
+    total: 255.0,
     shippingAddress: {
       street: "Avenida de la Paz 45",
       city: "Barcelona",
@@ -113,11 +113,11 @@ const mockOrders: Order[] = [
       phone: "+34 600 345 678",
     },
     items: [
-      { id: "4", name: "Aceite de Oliva", quantity: 1, price: 8.5, image: "/olive-oil-bottle.png" },
-      { id: "1", name: "Leche Entera 1L", quantity: 1, price: 2.5, image: "/vintage-milk-bottle.png" },
+      { id: "4", name: "Zapatillas Deportivas", quantity: 1, price: 75.0, image: "/olive-oil-bottle.png" },
+      { id: "1", name: "Camiseta Básica Algodón", quantity: 1, price: 25.0, image: "/vintage-milk-bottle.png" },
     ],
     status: "delivered",
-    total: 11.0,
+    total: 100.0,
     shippingAddress: {
       street: "Plaza del Sol 8",
       city: "Valencia",
@@ -135,9 +135,9 @@ const mockOrders: Order[] = [
       email: "juan@email.com",
       phone: "+34 600 901 234",
     },
-    items: [{ id: "2", name: "Pan Integral", quantity: 2, price: 3.2, image: "/whole-grain-bread.png" }],
+    items: [{ id: "2", name: "Jeans Clásicos", quantity: 2, price: 89.9, image: "/whole-grain-bread.png" }],
     status: "cancelled",
-    total: 6.4,
+    total: 179.8,
     shippingAddress: {
       street: "Calle de la Rosa 15",
       city: "Sevilla",
@@ -156,12 +156,12 @@ const mockOrders: Order[] = [
       phone: "+34 600 567 890",
     },
     items: [
-      { id: "3", name: "Yogurt Natural", quantity: 2, price: 1.8, image: "/natural-yogurt.png" },
-      { id: "5", name: "Huevos Docena", quantity: 2, price: 4.2, image: "/dozen-eggs-carton.jpg" },
-      { id: "1", name: "Leche Entera 1L", quantity: 1, price: 2.5, image: "/vintage-milk-bottle.png" },
+      { id: "3", name: "Sudadera con Capucha", quantity: 2, price: 45.0, image: "/natural-yogurt.png" },
+      { id: "5", name: "Chaqueta Denim", quantity: 2, price: 120.0, image: "/dozen-eggs-carton.jpg" },
+      { id: "1", name: "Camiseta Básica Algodón", quantity: 1, price: 25.0, image: "/vintage-milk-bottle.png" },
     ],
     status: "processing",
-    total: 14.5,
+    total: 235.0,
     shippingAddress: {
       street: "Paseo de Gracia 100",
       city: "Barcelona",

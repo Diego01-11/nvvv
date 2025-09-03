@@ -8,10 +8,10 @@ import { Star, TrendingUp, AlertTriangle, CheckCircle } from "lucide-react"
 
 export function InventoryAlerts() {
   const lowStockItems = [
-    { name: "Leche Entera 1L", stock: 5, minStock: 20, status: "critical" },
-    { name: "Pan Integral", stock: 12, minStock: 30, status: "warning" },
-    { name: "Yogurt Natural", stock: 8, minStock: 25, status: "critical" },
-    { name: "Aceite de Oliva", stock: 15, minStock: 20, status: "warning" },
+    { name: "Camiseta Básica Algodón", stock: 5, minStock: 20, status: "critical" },
+    { name: "Jeans Clásicos", stock: 12, minStock: 30, status: "warning" },
+    { name: "Sudadera con Capucha", stock: 8, minStock: 25, status: "critical" },
+    { name: "Zapatillas Deportivas", stock: 15, minStock: 20, status: "warning" },
   ]
 
   const getStatusColor = (status: string) => {
@@ -69,11 +69,11 @@ export function InventoryAlerts() {
 
 export function TopProducts() {
   const topProducts = [
-    { name: "Leche Entera 1L", sales: 1234, revenue: "$2,468", growth: "+12%" },
-    { name: "Pan Blanco", sales: 987, revenue: "$1,974", growth: "+8%" },
-    { name: "Huevos Docena", sales: 756, revenue: "$1,512", growth: "+15%" },
-    { name: "Yogurt Fresa", sales: 654, revenue: "$1,308", growth: "+5%" },
-    { name: "Queso Fresco", sales: 543, revenue: "$1,086", growth: "+20%" },
+    { name: "Camiseta Básica Algodón", sales: 1234, revenue: "$30,850", growth: "+12%" },
+    { name: "Jeans Clásicos", sales: 987, revenue: "$88,731", growth: "+8%" },
+    { name: "Chaqueta Denim", sales: 756, revenue: "$90,720", growth: "+15%" },
+    { name: "Sudadera con Capucha", sales: 654, revenue: "$29,430", growth: "+5%" },
+    { name: "Zapatillas Deportivas", sales: 543, revenue: "$40,725", growth: "+20%" },
   ]
 
   return (
@@ -114,23 +114,23 @@ export function RecentReviews() {
   const reviews = [
     {
       customer: "María González",
-      product: "Leche Entera 1L",
+      product: "Camiseta Básica Algodón",
       rating: 5,
-      comment: "Excelente calidad, muy fresca",
+      comment: "Excelente calidad, muy suave al tacto",
       time: "hace 2 horas",
     },
     {
       customer: "Carlos Ruiz",
-      product: "Pan Integral",
+      product: "Jeans Clásicos",
       rating: 4,
-      comment: "Buen sabor, pero llegó un poco tarde",
+      comment: "Buen ajuste, pero llegó un poco tarde",
       time: "hace 4 horas",
     },
     {
       customer: "Ana López",
-      product: "Yogurt Natural",
+      product: "Sudadera con Capucha",
       rating: 5,
-      comment: "Perfecto, justo como esperaba",
+      comment: "Perfecta, justo como esperaba",
       time: "hace 6 horas",
     },
   ]
