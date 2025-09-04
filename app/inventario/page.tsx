@@ -38,7 +38,7 @@ const inventoryData = [
       { id: 1, name: "Talla M", stock: 45, minStock: 20, price: 25.99 },
       { id: 2, name: "Talla L", stock: 8, minStock: 15, price: 25.99 },
     ],
-    image: "/vintage-milk-bottle.png",
+    image: "/camiseta-basica-algodon.jpg",
   },
   {
     id: 2,
@@ -49,7 +49,7 @@ const inventoryData = [
       { id: 3, name: "Talla 32", stock: 25, minStock: 10, price: 89.99 },
       { id: 4, name: "Talla 34", stock: 30, minStock: 15, price: 89.99 },
     ],
-    image: "/whole-grain-bread.png",
+    image: "/jeans-clasicos.jpg",
   },
   {
     id: 3,
@@ -60,7 +60,7 @@ const inventoryData = [
       { id: 5, name: "Talla M", stock: 2, minStock: 10, price: 45.99 },
       { id: 6, name: "Talla L", stock: 18, minStock: 8, price: 45.99 },
     ],
-    image: "/natural-yogurt.png",
+    image: "/sudadera-con-capucha.jpg",
   },
   {
     id: 4,
@@ -71,7 +71,7 @@ const inventoryData = [
       { id: 7, name: "Talla 42", stock: 35, minStock: 12, price: 75.99 },
       { id: 8, name: "Talla 43", stock: 22, minStock: 8, price: 75.99 },
     ],
-    image: "/olive-oil-bottle.png",
+    image: "/zapatillas-deportivas.jpg",
   },
 ]
 

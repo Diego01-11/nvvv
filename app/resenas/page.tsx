@@ -43,7 +43,7 @@ const mockReviews: Review[] = [
     product: {
       id: "1",
       name: "Camiseta Básica Algodón",
-      image: "/vintage-milk-bottle.png",
+      image: "/camiseta-basica-algodon.jpg",
     },
     rating: 5,
     comment: "Excelente calidad, muy suave al tacto y cómoda. La recomiendo totalmente.",
@@ -59,7 +59,7 @@ const mockReviews: Review[] = [
     product: {
       id: "2",
       name: "Jeans Clásicos",
-      image: "/whole-grain-bread.png",
+      image: "/jeans-clasicos.jpg",
     },
     rating: 4,
     comment: "Buen ajuste, pero llegó un poco tarde. El producto en sí está muy bien.",
@@ -76,7 +76,7 @@ const mockReviews: Review[] = [
     product: {
       id: "3",
       name: "Sudadera con Capucha",
-      image: "/natural-yogurt.png",
+      image: "/sudadera-con-capucha.jpg",
     },
     rating: 5,
     comment: "Perfecta, justo como esperaba. Muy cómoda y de buena calidad.",
@@ -92,7 +92,7 @@ const mockReviews: Review[] = [
     product: {
       id: "1",
       name: "Camiseta Básica Algodón",
-      image: "/vintage-milk-bottle.png",
+      image: "/camiseta-basica-algodon.jpg",
     },
     rating: 1,
     comment: "Producto terrible, no lo recomiendo para nada. Muy mala calidad.",
